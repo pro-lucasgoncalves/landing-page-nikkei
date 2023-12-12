@@ -53,12 +53,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .two-columns-01 .column.column-01 h2 {
-    font-size: 33px;
-  }
-}
-
 @media (min-width: 1024px) {
   .two-columns-01 .column.column-01 h2 {
     font-size: 42px;

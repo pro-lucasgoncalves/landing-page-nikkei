@@ -55,7 +55,6 @@
 
   .two-columns-02 .column.column-01 .text-box h2 {
     text-align: center;
-    margin-bottom: 40px;
   }
 
   .two-columns-02 .column.column-01 .text-box p {
@@ -77,8 +76,7 @@
   }
 
   .two-columns-02 .column.column-01 .text-box p {
-    font-size: 14px;
-    max-width: 366px;
+    max-width: 315px;
   }
 }
 
