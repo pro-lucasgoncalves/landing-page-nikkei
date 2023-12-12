@@ -10,5 +10,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector(".clientes"));
+observer.observe(document.querySelector(".pictures"));
 observer.observe(document.querySelector(".three-columns .row"));
 squares.forEach((element) => observer.observe(element));
