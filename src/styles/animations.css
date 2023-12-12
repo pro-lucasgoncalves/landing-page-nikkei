@@ -1,9 +1,9 @@
 .fade-in-image {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
   }
   
   @keyframes fadeIn {
@@ -32,8 +32,11 @@
   }
 
   .fade {
-    animation-name: fade;
-    animation-duration: 2s;
+    animation: fade 2s;
+    -webkit-animation: fade 2s;
+    -moz-animation: fade 2s;
+    -o-animation: fade 2s;
+    -ms-animation: fade 2s;
   }
   
   @keyframes fade {
@@ -59,4 +62,8 @@
   @-ms-keyframes fade {
     from {opacity: .5}
     to {opacity: 1}
+  }
+
+  .slide-left {
+    animation: slideLeft .5s;
   }
