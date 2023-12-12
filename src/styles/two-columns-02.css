@@ -1,0 +1,116 @@
+.two-columns-02 .row {
+  display: flex;
+  background-color: var(--blue);
+  padding: 50px 0;
+}
+
+.two-columns-02 .column.column-01 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-columns-02 .column.column-01 .text-box h2 {
+  text-align: left;
+  color: var(--yellow);
+  font-family: "Poppins ExtraBold";
+}
+
+.two-columns-02 .column.column-01 .text-box p {
+  font-family: "Poppins Regular";
+  color: #ffffff;
+}
+
+.two-columns-02 .column.column-02 {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+.two-columns-02 .column.column-02 .pictures {
+  display: flex;
+  justify-content: right;
+}
+
+.two-columns-02 .column.column-02 .pictures .acima {
+  position: absolute;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .two-columns-02 .row {
+    display: grid;
+    gap: 28px;
+  }
+  .two-columns-02 .column {
+    width: 100%;
+  }
+
+  .two-columns-02 .column.column-02 .text-box {
+    display: grid;
+    gap: 28px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box p {
+    font-size: 16px;
+    padding: 0 28px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 320px) {
+  .two-columns-02 .column.column-01 .text-box h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .two-columns-02 .column.column-01 .text-box h2 {
+    font-size: 43px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box p {
+    font-size: 14px;
+    max-width: 366px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .two-columns-02 .column.column-01 .text-box h2 {
+    font-size: 56px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box p {
+    font-size: 18px;
+    max-width: 470px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .two-columns-02 .column.column-01 .text-box h2 {
+    font-size: 74px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box p {
+    font-size: 24px;
+    max-width: 630px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .two-columns-02 .column.column-01 .text-box h2 {
+    font-size: 86px;
+  }
+
+  .two-columns-02 .column.column-01 .text-box p {
+    font-size: 28px;
+    max-width: 750px;
+  }
+}

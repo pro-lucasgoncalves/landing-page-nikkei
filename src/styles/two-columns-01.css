@@ -1,0 +1,78 @@
+.two-columns-01 .row {
+  display: flex;
+  justify-content: center;
+  padding: 37px 0;
+  gap: 28px;
+}
+
+.two-columns-01 .column.column-01 {
+  display: flex;
+  flex: 40%;
+  justify-content: end;
+  align-items: center;
+}
+
+.two-columns-01 .column.column-01 h2 {
+  text-align: right;
+  color: var(--blue);
+  font-family: "Poppins ExtraBold";
+}
+
+.two-columns-01 .column.column-02 {
+  display: flex;
+  flex: 60%;
+  justify-content: start;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .two-columns-01 .row {
+    display: grid;
+    gap: 28px;
+  }
+  .two-columns-01 .column {
+    width: 100%;
+  }
+
+  .two-columns-01 .column.column-01 {
+    justify-content: center;
+  }
+
+  .two-columns-01 .column.column-01 h2 {
+    text-align: center;
+  }
+
+  .two-columns-01 .column.column-02 {
+    padding: 0 18px;
+  }
+}
+
+@media (min-width: 320px) {
+  .two-columns-01 .column.column-01 h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .two-columns-01 .column.column-01 h2 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .two-columns-01 .column.column-01 h2 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .two-columns-01 .column.column-01 h2 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .two-columns-01 .column.column-01 h2 {
+    font-size: 70px;
+  }
+}

@@ -1,0 +1,51 @@
+.footer {
+  background-color: var(--blue);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  gap: 28px;
+}
+
+.footer-info {
+  display: flex;
+  font-family: "Poppins Regular";
+  color: #ffffff;
+  gap: 10px;
+}
+
+.footer-info .sede {
+  font-family: "Poppins ExtraBold";
+}
+
+.footer-info li.email {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info li.email img {
+  margin-right: 4px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer .container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer .container {
+    flex-direction: row;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,125 @@
+.header {
+  background-color: var(--blue);
+  font-family: "Poppins SemiBold";
+}
+
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1395px;
+  padding: 14px 28px;
+}
+
+.nav {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 9px;
+}
+
+.header .nav a:first-child:hover {
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.header .nav a:last-child:hover {
+  background-color: var(--yellow);
+  color: var(--blue);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.others-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.others-menu .contato {
+  color: var(--blue);
+  background-color: var(--yellow);
+}
+
+.others-menu .box {
+  background-color: #ffffff;
+  width: 2px;
+  height: 70px;
+}
+
+.others-menu .languages a {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .header .container {
+    max-width: 990px;
+  }
+
+  .header .container .header-logo {
+    max-width: 265px;
+  }
+
+  .others-menu .languages a img {
+    width: 30px;
+  }
+
+  .others-menu .box {
+    height: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header .container {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 14px;
+    padding: 23px 28px;
+  }
+
+  .nav {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .others-menu {
+    display: block;
+  }
+
+  .others-menu .box {
+    display: none;
+  }
+
+  .others-menu .languages {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .others-menu .languages a img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header a {
+    font-size: 36px;
+  }
+
+  .header .container {
+    padding: 53px 28px;
+  }
+}

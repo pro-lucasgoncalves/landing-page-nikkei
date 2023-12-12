@@ -1,0 +1,122 @@
+.three-columns {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px;
+  gap: 40px;
+}
+
+.three-columns .column .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three-columns h2,
+.three-columns .column .content-box h3 {
+  font-family: "Poppins ExtraBold";
+  color: var(--blue);
+}
+
+.three-columns .column .content-box p {
+  font-family: "Poppins Regular";
+  color: #000000;
+}
+
+.three-columns .row {
+  display: flex;
+  gap: 20px;
+}
+
+.three-columns .column {
+  flex: 33.33%;
+}
+
+@media screen and (max-width: 768px) {
+  .three-columns .row {
+    display: grid;
+  }
+  .three-columns .column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  .three-columns h2 {
+    font-size: 28px;
+  }
+
+  .three-columns .column .content-box h3 {
+    font-size: 22px;
+    padding: 10px 0 5px;
+  }
+
+  .three-columns .column .content-box p {
+    max-width: 385px;
+    padding: 0 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .three-columns h2 {
+    font-size: 33px;
+  }
+
+  .three-columns .column .content-box h3 {
+    font-size: 24px;
+    padding: 12px 0 6px;
+  }
+
+  .three-columns .column .content-box p {
+    max-width: 565px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .three-columns h2 {
+    font-size: 42px;
+  }
+
+  .three-columns .column .content-box h3 {
+    font-size: 26px;
+    padding: 14px 0 7px;
+  }
+
+  .three-columns .column .content-box p {
+    font-size: 17px;
+    max-width: 285px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .three-columns h2 {
+    font-size: 48px;
+  }
+
+  .three-columns .column .content-box h3 {
+    font-size: 32px;
+    padding: 18px 0 9px;
+  }
+
+  .three-columns .column .content-box p {
+    font-size: 25px;
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .three-columns h2 {
+    font-size: 70px;
+  }
+
+  .three-columns .column .content-box h3 {
+    font-size: 42px;
+    padding: 26px 0 14px;
+  }
+
+  .three-columns .column .content-box p {
+    font-size: 32px;
+    max-width: 535px;
+  }
+}
