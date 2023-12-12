@@ -6,6 +6,16 @@ const observer = new IntersectionObserver((entries) => {
       // Add the animation class
       entry.target.classList.add("fade-in-image");
     }
+
+    if (entry.isIntersecting && entry.target.classList.contains("pictures")) {
+      // Add the animation class
+      entry.target.classList.add("slide-in");
+    }
+
+    if (entry.isIntersecting && entry.target.classList.contains("row")) {
+      // Add the animation class
+      entry.target.classList.add("slide-up");
+    }
   });
 });
 

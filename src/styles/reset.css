@@ -23,4 +23,5 @@ ul {
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
